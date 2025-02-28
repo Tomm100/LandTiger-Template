@@ -9,7 +9,7 @@ This repository is intended to support coursework and projects for the following
 
 The template offers practical tools to streamline development with the LandTiger board, allowing students to focus on mastering key concepts in embedded systems.
 
-# LandTiger NXP LPC1768
+## LandTiger NXP LPC1768
 The code is designed for the **LandTiger NXP LPC1768** used at Politecnico.
 Key details about the chip:
   - ARM 32-bit Cortex-M3 microcontroller with MPU, CPU clock up to 100MHz
@@ -19,7 +19,7 @@ Key details about the chip:
   - Power Management Unit and Wakeup Interrupt Controller
   - The project is developed using the Keil uVision IDE
 
-# Project Structure
+## Project Structure
 
 ```
 ├── .gitignore                # File to exclude items from versioning
