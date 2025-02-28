@@ -29,26 +29,9 @@ void TIMER0_IRQHandler (void)
 	
 	
   if(LPC_TIM0->IR & (1<<0)) { 
-		//MR0 Interrupt
+	//MR0 Interrupt
     
-			/*
-		
-		IMPLEMENTA QUI LA FUZIONE INERENTE TIMER0
-		
-		// LAMPEGGIO
-		
-		static uint8_t i=0;
-		
-		if(i%2 == 0)
-			LED_On(position); // ACCENDO IL LED 
-		else
-			LED_Off(position); // SPENGO IL LED
-		i++;
-		
-		*/
-		
-		
-		LPC_TIM0->IR = (1<<0); 		//clear interrupt flag
+	LPC_TIM0->IR = (1<<0); 		//clear interrupt flag
 		
  } if(LPC_TIM0->IR & (1<<1)) { 
 	 //MR1 Interrupt
@@ -85,23 +68,29 @@ void TIMER0_IRQHandler (void)
 ******************************************************************************/
 void TIMER1_IRQHandler (void)
 {
-	/*
 	
-	IMPLEMENTA QUI LA FUZIONE INERENTE TIMER1
-	
-	// LAMPEGGIO
-	
-	static uint8_t i=0;
-	
-	if(i%2 == 0)
-		LED_On(position); // ACCENDO IL LED 
-	else
-		LED_Off(position); // SPENGO IL LED
-	i++;
-	
-	*/
-	
-  LPC_TIM1->IR = 1;			/* clear interrupt flag */
+ if(LPC_TIM1->IR & (1<<0)) { 
+	//MR0 Interrupt
+    
+	LPC_TIM1->IR = (1<<0); 		//clear interrupt flag
+		
+ } if(LPC_TIM1->IR & (1<<1)) { 
+	 //MR1 Interrupt
+	 
+    LPC_TIM1->IR = (1<<1);   //clear interrupt flag
+	 
+ } if(LPC_TIM1->IR & (1<<2)) { 
+	 //MR2 Interrupt
+	 
+    LPC_TIM1->IR = (1<<2);   //clear interrupt flag
+	 
+ } if(LPC_TIM1->IR & (1<<3)) { 
+	 
+	 //MR3 Interrupt
+	 
+    LPC_TIM1->IR = (1<<3);   //clear interrupt flag
+ }
+
   return;
 }
 
@@ -116,23 +105,30 @@ void TIMER1_IRQHandler (void)
 ******************************************************************************/
 void TIMER2_IRQHandler (void)
 {
-	/*
 	
-	IMPLEMENTA QUI LA FUZIONE INERENTE TIMER1
+	
+ if(LPC_TIM2->IR & (1<<0)) { 
+	//MR0 Interrupt
+    
+	LPC_TIM2->IR = (1<<0); 		//clear interrupt flag
 		
-	// LAMPEGGIO
-	
-	static uint8_t i=0;
-	
-	if(i%2 == 0)
-		LED_On(position); // ACCENDO IL LED 
-	else
-		LED_Off(position); // SPENGO IL LED
-	i++;
-	
-	*/
-	
-  LPC_TIM2->IR = 1;			/* clear interrupt flag */
+ } if(LPC_TIM2->IR & (1<<1)) { 
+	 //MR1 Interrupt
+	 
+    LPC_TIM2->IR = (1<<1);   //clear interrupt flag
+	 
+ } if(LPC_TIM2->IR & (1<<2)) { 
+	 //MR2 Interrupt
+	 
+    LPC_TIM2->IR = (1<<2);   //clear interrupt flag
+	 
+ } if(LPC_TIM2->IR & (1<<3)) { 
+	 
+	 //MR3 Interrupt
+	 
+    LPC_TIM2->IR = (1<<3);   //clear interrupt flag
+ }
+
   return;
 }
 
@@ -147,23 +143,30 @@ void TIMER2_IRQHandler (void)
 ******************************************************************************/
 void TIMER3_IRQHandler (void)
 {
-	/*
 	
-	IMPLEMENTA QUI LA FUZIONE INERENTE TIMER1
+	
+  if(LPC_TIM3->IR & (1<<0)) { 
+	//MR0 Interrupt
+    
+	LPC_TIM3->IR = (1<<0); 		//clear interrupt flag
 		
-	// LAMPEGGIO
-	
-	static uint8_t i=0;
-	
-	if(i%2 == 0)
-		LED_On(position); // ACCENDO IL LED 
-	else
-		LED_Off(position); // SPENGO IL LED
-	i++;
-	
-	*/
-	
-  LPC_TIM3->IR = 1;			/* clear interrupt flag */
+ } if(LPC_TIM3->IR & (1<<1)) { 
+	 //MR1 Interrupt
+	 
+    LPC_TIM3->IR = (1<<1);   //clear interrupt flag
+	 
+ } if(LPC_TIM3->IR & (1<<2)) { 
+	 //MR2 Interrupt
+	 
+    LPC_TIM3->IR = (1<<2);   //clear interrupt flag
+	 
+ } if(LPC_TIM3->IR & (1<<3)) { 
+	 
+	 //MR3 Interrupt
+	 
+    LPC_TIM3->IR = (1<<3);   //clear interrupt flag
+ }
+
   return;
 }
 /******************************************************************************
