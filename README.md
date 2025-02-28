@@ -70,3 +70,8 @@ Key details about the chip:
 │   ├── TouchPanel/           # Touch panel management
 │       ├── TouchPanel.c/.h   # Touch panel driver
 ```
+## Contributors
+  - **Author:** Tommaso Centonze
+## License
+  - This project is licensed under the [MIT License](LICENSE).
+  
